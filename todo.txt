@@ -1,7 +1,7 @@
 20-3
 - [X] Blokjes voor propeen+ethyn
 - [X] Menu
-- [ ] SPAN- en ASIDE-tag
+- [ ] SPAN- en ASIDE-tag -> Tabel alkanen
 
 Week
 - [X] CSS animatie
