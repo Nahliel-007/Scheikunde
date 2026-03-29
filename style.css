@@ -1,16 +1,16 @@
 :root {
     --a: calc((50vw - 50px) / 3);
+    --boek-blauw: #dae3ed;
 }
 
 .plaatjes {
     display: flex;
     justify-content: center;
-
 }
 
-body { 
+body {
     color: rgb(0, 0, 0);
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 .table-container {
@@ -26,7 +26,6 @@ body {
     justify-content: center;
     gap: 0px;
     padding: 10px;
-
 }
 
 .svg {
@@ -42,11 +41,25 @@ body {
 
 nav {
     text-align: center;
-    display: flex;             
-    flex-wrap: wrap;           
-    justify-content: center;   
-    gap: 5px;                 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
     padding: 10px;
+}
+
+.current-page {
+    pointer-events: none;
+    text-decoration: none;
+    font-weight: 700;
+	color: black;
+	animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { color: black; }
+    50% { color: #6c64af; }
+    100% { color: black; }
 }
 
 nav a {
@@ -57,11 +70,7 @@ nav a {
     border-radius: 4px;
     color: #6c64af;
     text-decoration: none;
-    transition: 0.05s ;
-}
-
-nav a:first-of-type {
-    margin-right: 20px;
+    transition: 0.05s;
 }
 
 nav a:hover {
@@ -85,28 +94,30 @@ nav a:hover {
     justify-content: center;
 }
 
-td, th {
+td,
+th {
     border: 2px solid white;
     border-collapse: collapse;
 }
 
 table {
     border-collapse: collapse;
-    background-color: #DAE3ED;
+    background-color: var(--boek-blauw);
 }
 
 .strucFormCard {
-    box-shadow: 
-    -5px 0 5px -2px rgba(0, 0, 0, 0.3),
-     5px 0 5px -2px rgba(0, 0, 0, 0.3),
-     0 5px 5px -2px rgba(0, 0, 0, 0.3);
+    box-shadow:
+        -5px 0 5px -2px rgba(0, 0, 0, 0.3),
+        5px 0 5px -2px rgba(0, 0, 0, 0.3),
+        0 5px 5px -2px rgba(0, 0, 0, 0.3);
     border-radius: 8px;
     padding: 10px;
-    background-color: #DAE3ED;
+    background-color: var(--boek-blauw);
     width: var(--a);
 }
 
-footer, header {
+footer,
+header {
     background-color: #a5a0ce;
     padding: 10px;
 }
@@ -139,31 +150,36 @@ header {
     border-radius: 12px;
     padding: 1.2rem;
     margin-bottom: 2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); 
-    line-height: 1.6; 
-}
-.strucFormImg {
-  /* Starttoestand: volledig zwart, wazig en onzichtbaar */
-  filter: brightness(0) blur(10px);
-  opacity: 0;
-  transform: scale(0.9); /* Iets kleiner voor een 'zoom' effect */
-  
-  animation: shadowToLife 1.5s ease-out forwards;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    line-height: 1.6;
 }
 
-@keyframes shadowToLife {
-  0% {
+.strucFormImg {
     filter: brightness(0) blur(10px);
     opacity: 0;
     transform: scale(0.9);
-  }
-  50% {
-    opacity: 0.5; /* Halverwege zie je de schaduwvorm */
-    filter: brightness(0.2) blur(5px);
-  }
-  100% {
-    filter: brightness(1) blur(0px); /* Volledig scherp en eigen kleur */
-    opacity: 1;
-    transform: scale(1);
-  }
+    animation: shadowToLife 1.5s ease-out forwards;
+}
+
+@keyframes shadowToLife {
+    0% {
+        filter: brightness(0) blur(10px);
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    50% {
+        opacity: 0.5;
+        filter: brightness(0.2) blur(5px);
+    }
+    100% {
+        filter: brightness(1) blur(0px);
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.sysNaam {
+    border: 1px solid #e0e0e0;
+    border-radius: 0;
+    box-shadow: 3px 5px 0 0 var(--boek-blauw);
 }
