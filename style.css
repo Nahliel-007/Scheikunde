@@ -1,0 +1,169 @@
+:root {
+    --a: calc((50vw - 50px) / 3);
+}
+
+.plaatjes {
+    display: flex;
+    justify-content: center;
+
+}
+
+body { 
+    color: rgb(0, 0, 0);
+    font-family: 'Inter', sans-serif;
+}
+
+.table-container {
+    display: grid;
+    border: 1px;
+    text-align: center;
+    width: 250px;
+    height: auto;
+}
+
+.structuurformules {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+    padding: 10px;
+
+}
+
+.svg {
+    display: block;
+}
+
+.setFormules {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav {
+    text-align: center;
+    display: flex;             
+    flex-wrap: wrap;           
+    justify-content: center;   
+    gap: 5px;                 
+    padding: 10px;
+}
+
+nav a {
+    font-weight: 400;
+    border: 1px solid black;
+    background-color: #f0f0f0;
+    padding: 2px 8px;
+    border-radius: 4px;
+    color: #6c64af;
+    text-decoration: none;
+    transition: 0.05s ;
+}
+
+nav a:first-of-type {
+    margin-right: 20px;
+}
+
+nav a:hover {
+    font-weight: 700;
+}
+
+.redText {
+    color: red;
+}
+
+.strucFormImg {
+    width: 100%;
+    margin: auto 0px auto 0px;
+}
+
+.strucFormImgContainer {
+    width: var(--a);
+    height: var(--a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+td, th {
+    border: 2px solid white;
+    border-collapse: collapse;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: #DAE3ED;
+}
+
+.strucFormCard {
+    box-shadow: 
+    -5px 0 5px -2px rgba(0, 0, 0, 0.3),
+     5px 0 5px -2px rgba(0, 0, 0, 0.3),
+     0 5px 5px -2px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #DAE3ED;
+    width: var(--a);
+}
+
+footer, header {
+    background-color: #a5a0ce;
+    padding: 10px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+iframe {
+    border: 0px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.namenStruc {
+    text-align: center;
+    font-size: 1.5em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 1.2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); 
+    line-height: 1.6; 
+}
+.strucFormImg {
+  /* Starttoestand: volledig zwart, wazig en onzichtbaar */
+  filter: brightness(0) blur(10px);
+  opacity: 0;
+  transform: scale(0.9); /* Iets kleiner voor een 'zoom' effect */
+  
+  animation: shadowToLife 1.5s ease-out forwards;
+}
+
+@keyframes shadowToLife {
+  0% {
+    filter: brightness(0) blur(10px);
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 0.5; /* Halverwege zie je de schaduwvorm */
+    filter: brightness(0.2) blur(5px);
+  }
+  100% {
+    filter: brightness(1) blur(0px); /* Volledig scherp en eigen kleur */
+    opacity: 1;
+    transform: scale(1);
+  }
+}
