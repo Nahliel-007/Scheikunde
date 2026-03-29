@@ -1,5 +1,6 @@
 :root {
     --a: calc((50vw - 50px) / 3);
+    --boek-donker-blauw: #0585b7;
 }
 
 .plaatjes {
@@ -166,4 +167,9 @@ header {
     opacity: 1;
     transform: scale(1);
   }
+}
+
+.boekDik {
+    color: var(--boek-donker-blauw);
+    font-weight: bold;
 }
