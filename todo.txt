@@ -1,0 +1,21 @@
+20-3
+- [X] Blokjes voor propeen+ethyn
+- [X] Menu
+- [ ] SPAN- en ASIDE-tag
+
+Week
+- [X] CSS animatie
+- [X] Kaart met voorbeelden systematische naamgeving
+- [X] Andere inhoud
+- [ ] Inhoud af krijgen
+- [ ] A/B-test met: 
+        1. Kaarten van elk deel;
+        2. Homepagina en menu bovenaan (zoals nu).
+
+
+Zondag 29-3
+- [ ] Mobiele weergave
+- [ ] Lay-out aanpassen
+- [ ] Sub- en objectieve evaluatie bedenken EN uitvoeren (docent en lln)
+- [] Plaatje bovenaan toevoegen
+- [] Naamgeving onder de voorbeelden

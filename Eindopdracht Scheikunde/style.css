@@ -127,7 +127,7 @@ header {
 
 .namenStruc {
     text-align: center;
-    font-size: 2vw;
+    font-size: 1.5em;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -141,4 +141,29 @@ header {
     margin-bottom: 2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); 
     line-height: 1.6; 
+}
+.strucFormImg {
+  /* Starttoestand: volledig zwart, wazig en onzichtbaar */
+  filter: brightness(0) blur(10px);
+  opacity: 0;
+  transform: scale(0.9); /* Iets kleiner voor een 'zoom' effect */
+  
+  animation: shadowToLife 1.5s ease-out forwards;
+}
+
+@keyframes shadowToLife {
+  0% {
+    filter: brightness(0) blur(10px);
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 0.5; /* Halverwege zie je de schaduwvorm */
+    filter: brightness(0.2) blur(5px);
+  }
+  100% {
+    filter: brightness(1) blur(0px); /* Volledig scherp en eigen kleur */
+    opacity: 1;
+    transform: scale(1);
+  }
 }
