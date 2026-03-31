@@ -15,7 +15,7 @@ Week
 
 Zondag 29-3
 - [ ] Mobiele weergave
-- [ ] Lay-out aanpassen
+- [X] Lay-out aanpassen
 - [ ] Sub- en objectieve evaluatie bedenken EN uitvoeren (docent en lln)
 - [] Plaatje bovenaan toevoegen
 - [] Naamgeving onder de voorbeelden

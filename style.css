@@ -7,6 +7,7 @@
 .plaatjes {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 body {
@@ -16,11 +17,15 @@ body {
 }
 
 .table-container {
-    display: grid;
-    border: 1px;
+    display: block;
     text-align: center;
     width: 250px;
+    min-width: 200px;
     height: auto;
+}
+
+.table-container table {
+    width: 100%;
 }
 
 .structuurformules {
@@ -138,6 +143,27 @@ footer {
 
 iframe {
     border: 0px;
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border-radius: 8px;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.uitleg-tekst {
+    flex: 1 1 0;
+    min-width: 250px;
+}
+
+.table-container {
+    flex: 0 0 250px;
 }
 
 header {
@@ -197,4 +223,14 @@ header {
 .boekDik {
     color: var(--boek-donker-blauw);
     font-weight: bold;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.uitleg-tekst {
+    flex: 1;
 }
