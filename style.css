@@ -7,6 +7,7 @@
 .plaatjes {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 body {
@@ -18,11 +19,15 @@ body {
 }
 
 .table-container {
-    display: grid;
-    border: 1px;
+    display: block;
     text-align: center;
     width: 250px;
+    min-width: 200px;
     height: auto;
+}
+
+.table-container table {
+    width: 100%;
 }
 
 .structuurformules {
@@ -140,6 +145,27 @@ footer {
 
 iframe {
     border: 0px;
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border-radius: 8px;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.uitleg-tekst {
+    flex: 1 1 0;
+    min-width: 250px;
+}
+
+.table-container {
+    flex: 0 0 250px;
 }
 
 header {
@@ -151,7 +177,7 @@ header {
 
 .namenStruc {
     text-align: center;
-    font-size: 1.5em;
+    font-size: clamp(1rem, 2vw, 1.5rem);
     text-align: center;
     display: flex;
     justify-content: center;
@@ -167,6 +193,49 @@ header {
     margin-right: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     line-height: 1.6;
+}
+
+article.card.with-aside {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+article.card.with-aside .card-text {
+    flex: 1 1 0;
+    min-width: 240px;
+}
+
+article.card.with-aside aside {
+    flex: 0 0 min(320px, 38%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+article.card.with-aside aside img,
+article.card.with-aside aside .plaatjes,
+article.card.with-aside aside .table-container,
+article.card.with-aside aside .setFormules {
+    width: 100%;
+}
+
+article.card.with-aside aside .plaatjes {
+    justify-content: center;
+}
+
+@media (max-width: 900px) {
+    article.card.with-aside {
+        flex-direction: column;
+    }
+
+    article.card.with-aside aside {
+        width: 100%;
+        flex: 1 1 100%;
+    }
 }
 
 .strucFormImg {
@@ -248,4 +317,13 @@ html {
         font-size: 16px;
         font-weight: 700;
     }
+}
+.content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.uitleg-tekst {
+    flex: 1;
 }
