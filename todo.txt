@@ -11,12 +11,11 @@ Week
 - [ ] A/B-test met: 
         1. Kaarten van elk deel;
         2. Homepagina en menu bovenaan (zoals nu).
-- [] Aanpassen naamgeving ether
 
 
 Zondag 29-3
 - [ ] Mobiele weergave
-- [X] Lay-out aanpassen
+- [ ] Lay-out aanpassen
 - [ ] Sub- en objectieve evaluatie bedenken EN uitvoeren (docent en lln)
-- [X] Plaatje bovenaan toevoegen
-- [X] Naamgeving onder de voorbeelden
+- [] Plaatje bovenaan toevoegen
+- [] Naamgeving onder de voorbeelden
