@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Koolstofchemie | Home </title>
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+    <script src="js/darkmode.js"></script>
     <style>
         header {
             text-align: center;
@@ -20,7 +21,7 @@
 
 <body>
     <header id="top">
-        <h1 style="color: #2c3e50;">Koolstofchemie</h1>
+        <h1 style="text-transform: uppercase;">Koolstofchemie</h1>
         <nav>
             <a href="index.html" class="current-page">Home</a>
             <a href="Carbonzuur.html">Carbonzuren</a>
@@ -283,6 +284,9 @@
     <div id="back-to-top" class="back-to-top">
         <a href="#top">Naar boven</a>
     </div>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <span id="theme-icon">🌙</span>
+    </button>
     <script src="js/scroll.js"></script>
 </body>
 </html>
