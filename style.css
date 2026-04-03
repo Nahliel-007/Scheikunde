@@ -266,6 +266,10 @@ article.card.with-aside aside .plaatjes {
     border: 1px solid #e0e0e0;
     border-radius: 0;
     box-shadow: 3px 5px 0 0 var(--boek-blauw);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 12px;
+    margin-right: 12px;
 }
 
 .boekDik {
