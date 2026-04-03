@@ -242,7 +242,10 @@ article.card.with-aside aside .plaatjes {
     filter: brightness(0) blur(10px);
     opacity: 0;
     transform: scale(0.9);
-    animation: shadowToLife 1.5s ease-out forwards;
+}
+
+.strucFormImg.animate-in {
+    animation: shadowToLife 1s ease-out forwards;
 }
 
 @keyframes shadowToLife {
@@ -281,8 +284,17 @@ html {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    display: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+    pointer-events: none;
     z-index: 1000;
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
 }
 
 .back-to-top a {
