@@ -11,16 +11,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const backToTopButton = document.getElementById("back-to-top");
     backToTopButton.classList.remove("visible");
 
-    // Intersection Observer for image animations
     const imageObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('animate-in');
-                observer.unobserve(entry.target); // Stop observing after animation triggers
+                observer.unobserve(entry.target);
             }
         });
     }, {
-        threshold: 0.05,
+        threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
     });
 
