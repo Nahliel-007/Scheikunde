@@ -5,12 +5,10 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     const themeToggle = document.getElementById('theme-toggle');
-    const themeIcon = document.getElementById('theme-icon');
     const html = document.documentElement;
 
     const currentTheme = localStorage.getItem('theme') || 'light';
     html.setAttribute('data-theme', currentTheme);
-    updateThemeIcon(currentTheme);
 
     if (themeToggle) {
         themeToggle.addEventListener('click', () => {
@@ -19,13 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
             
             html.setAttribute('data-theme', newTheme);
             localStorage.setItem('theme', newTheme);
-            updateThemeIcon(newTheme);
         });
-    }
-
-    function updateThemeIcon(theme) {
-        if (themeIcon) {
-            themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
-        }
     }
 });

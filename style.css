@@ -121,6 +121,10 @@ nav a:hover {
     font-weight: 700;
 }
 
+.theme-toggle:hover {
+    cursor: pointer;
+}
+
 .redText {
     color: red;
 }
